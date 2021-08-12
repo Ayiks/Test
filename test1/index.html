@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Test</title>
+        <link rel="stylesheet" href="css/main.css">
+        <script defer src="js/main.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <label>Select a CSV file: </label>
+            <input type="file" id="cvsfile" onchange="loadCSVFile(event);">
+            <br><br>
+            <section class="csv-details">
+                <h4>CSV headings: </h4>
+                <div id="head-text-div" class="textarea" contenteditable></div>
+                <br><br>
+                <h4>CSV values: </h4>
+                <div id="text-div" class="textarea" contenteditable></div>
+                <br><br>
+                <h4>Processed CSV: </h4>
+                <div id="pro-text-div" class="textarea" contenteditable></div>
+            </section>
+            <textarea id="original" class="hidden"></textarea>
+            <textarea id="processed" class="hidden"></textarea>
+        </div>
+    </body>
+</html>
